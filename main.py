@@ -1,16 +1,23 @@
-# This is a sample Python script.
+"""
+1,データ準備
+"""
+age = 18
+weight = 75.5
+stu_id = 1
+stu_id2 = 1000
+name = "雷声楽"
+# 1、今年我的年龄是X岁 --整数 %d
+print('我的名字是%s' % name)
+# 2、我的名字是x -- 字符串 %s
+print('我的名字是 %s' % name)
+# 3、我的体重是X公斤 -- 浮点数 %f
+print('我的体重是%.3f公斤' % weight)
+# 4、我的学号是001
+print('我的学号是%03d' % stu_id)
+print('我的学号是%03d' % stu_id2)
+# 5、我的名字是x，今年x岁了
+print('我的名字是%s,今年%d' % (name, age))
+print('我的名字是%s,明年%d岁了' % (name, age))
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# 6、我的名字是x，今年x岁了，体重x公斤，学号是x
+print('我的名字是%s,今年%d岁了，体重%.2f公斤，学号是%d' % (name, age, weight, stu_id))
